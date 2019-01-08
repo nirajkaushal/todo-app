@@ -13,12 +13,13 @@
         -->
         <!-- Required meta tags-->
         <meta charset="utf-8">
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src *; font-src *; media-src *; img-src 'self' data: content:;">
         <meta name="format-detection" content="telephone=no">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="theme-color" content="#2196f3">
         <title>Demo App</title>
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900" rel="stylesheet">
         <link rel="stylesheet" href="css/framework7.md.min.css">
         <link rel="stylesheet" href="css/font.css">
         <link rel="stylesheet" href="css/app.css">
@@ -30,11 +31,63 @@
         <div class="view view-main">
           <div data-name="home" class="page">
             <div class="page-content">
-                <div class="app-status">
-                    <h1>C😍😍l!!</h1>
-                    <p>Now you are ready to go...🚴</p>
+                <div class="main-page-wrapper">
+                    <div class="topbar">
+                        <div class="header">
+                            <div class="day">
+                                <strong>Sunday</strong>, 10th
+                            </div>
+                            <div class="total-task"><strong>12</strong> Tasks</div>
+                        </div>
+                        <p class="month">December</p>
+                    </div>
+                    <div class="tasks">
+                        <div class="list">
+                          <ul>
+                            <li>
+                              <label class="item-checkbox item-content">
+                                <input type="checkbox" name="demo-checkbox" value="Books" checked="checked"/>
+                                <i class="icon icon-checkbox"></i>
+                                <div class="item-inner">
+                                  <div class="item-title">Buy book 'How to earn money'</div>
+                                </div>
+                                <div class="task-time">7:00 AM</div>
+                              </label>
+                            </li>
+                            <li>
+                              <label class="item-checkbox item-content">
+                                <input type="checkbox" name="demo-checkbox" value="Movies"/>
+                                <i class="icon icon-checkbox"></i>
+                                <div class="item-inner">
+                                  <div class="item-title">Book Movie tickets</div>
+                                </div>
+                                <div class="task-time">11:00 AM</div>
+                              </label>
+                            </li>
+                            <li>
+                              <label class="item-checkbox item-content">
+                                <input type="checkbox" name="demo-checkbox" value="Food"/>
+                                <i class="icon icon-checkbox"></i>
+                                <div class="item-inner">
+                                  <div class="item-title">Buy Food for dinner</div>
+                                </div>
+                                <div class="task-time">2:00 PM</div>
+                              </label>
+                            </li>
+                            <li>
+                              <label class="item-checkbox item-content completed">
+                                <input type="checkbox" name="demo-checkbox" value="Drinks" checked="checked" />
+                                <i class="icon icon-checkbox"></i>
+                                <div class="item-inner">
+                                  <div class="item-title">Drink water</div>
+                                </div>
+                                <div class="task-time">10:30 PM</div>
+                              </label>
+                            </li>
+                          </ul>
+                        </div>
+                    </div>
                 </div>
-                <p class="credit">Designed By Framework7 and powered by Cordova</p>
             </div>
           </div>
         </div>
